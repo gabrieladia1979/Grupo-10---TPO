@@ -1,0 +1,238 @@
+html{height: 100%;}
+*{  margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(252, 255, 251);
+    position: relative;
+     min-height: 100vh;
+
+
+}
+header{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    height: auto;
+    background-color: goldenrod;
+
+} 
+main{
+    position: relative;
+
+
+
+
+}
+footer{
+background-color: brown;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+height:3 em;
+margin:auto;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;        
+  }
+  
+  .topnav{
+         display:flex;
+         justify-content: space-between;
+         padding: 10px;
+         margin-bottom: 5px; 
+         width: 100%;     
+         
+  }
+  .topheader{
+         box-shadow: 0 4px 5px rgb(3, 3, 3);
+         align-items: center;
+         justify-content: space-between;
+         float:right;
+         margin-bottom: 20px;
+         width: 100%;
+  }
+  
+  
+  
+  
+  body {
+         background: rgb(193, 186, 186);
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  header{
+         background: white;
+         width: 100%;
+         clear: both;
+         content:'';
+         display: table;
+         
+  }
+  
+  .menu{
+         display: flex;
+         list-style: none;
+         width: 900px;
+         margin: 10px auto;
+         padding: 5px;
+         font-size: 20px;
+  }
+  
+  img {
+         position: center;
+         float: left;
+         padding: 0px;
+  }
+  
+  
+  
+  nav ul li {
+         list-style-type: none;
+         margin-left: 75px;
+         padding:12px 0;
+         position:relative;
+         
+  }
+  
+  nav ul li a {
+  
+         text-decoration: none;
+         color: black;
+         font-weight: bold;
+         
+         
+         
+  }
+  
+  nav ul li a::before{
+         display: block;
+         content: '';
+         width:0%;
+         background: #444;
+         height: 5px;
+         top:0;
+         position: absolute;
+         transition: width 1s;
+  }
+  
+  nav ul li a:hover:before{
+         width: 100px;
+  }
+  
+  
+  
+  
+.TituloPrincipal{
+text-align: center;
+}
+.contenedor{
+    margin: 0 auto;
+ 
+}
+
+.imgpresentacion{
+   width: 50%;
+    border-radius: 20px; 
+     box-shadow: 10px 10px 5px rgb(90, 91, 91);
+}
+
+.TituloPagina{
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.contenedorflex{
+    display: flex;
+    justify-content:space-around;
+    
+} 
+.cajaintegrante{
+    background-color: rgb(229, 188, 41);
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:10px 10px 5px rgb(90, 91, 91);
+    text-align: center;
+
+}
+.fotointegrante{
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+
+} 
+.NombreIntegrante{
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: red;
+    text-align: center;
+    
+    
+
+}
+.textoflex{
+    margin: 2em;
+}
+@media all and (max-width: 700px) {  /*cuando el dispositivo es como máximo de 700px*/
+  
+    input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+    display:block;
+      }
+  
+      input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
+      background: lightgrey; 
+          }
+  
+      label:hover{                /*cambia el color de ☰ */
+      background: grey;
+      }
+  
+    li{                         /*elimina el margen  de cada botón */
+         margin: 0px;
+         text-align: left;
+     }
+  
+     label {                      /* dibuja la etiqueta ☰  con formato botón */
+       box-sizing: border-box;
+       display: block;
+       border: 1px solid black;
+       border-radius: 5px;
+       width: 30px;
+       height: 30px;
+       line-height: 30px;
+       font-weight: bold;
+       text-align: center;
+       user-select: none;
+       background-color: cadetblue;
+  
+        }
+      
+  
+    ul{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
+       display: none;
+       background-color:white;
+  
+      }
+     .contenedorflex{
+        flex-direction: column;
+        justify-content: center;
+     }  
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  ul li a:hover{
+    color: red;
+  }
